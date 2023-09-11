@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let arr=[]; 
+         let maxValue = 0;
+        let maxIndex = 0;
+         while(arr.length<10){ 
+        let number =+prompt ("mời nhập số nguyên");
+        if (Number.isInteger (number)){ arr.push(number);
+              } 
+              for (let i = 0; i < arr.length; i++)
+            if (arr[i] > maxValue) {
+                maxValue = arr[i];
+                maxIndex = i + 1;
+                
+              }}
+              console.log('phan tu lon nhat la', maxValue);
+        console.log('vi tri cua phan tu lon nhat la', maxIndex);
+    </script>
+</body>
+</html>
