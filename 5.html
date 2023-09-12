@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function findMin(arr) {
+            let minValue = arr[0];
+            let minIndex = 0;
+
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] < minValue) {
+                    minValue = arr[i];
+                    minIndex = i;
+                }
+            }
+
+            return [minValue, minIndex];
+        }
+
+        let arr = [];
+
+        while (arr.length < 3) {
+            let number = +prompt("mời nhập số nguyên");
+            if (Number.isInteger(number)) {
+                arr.push(number);
+            }
+        }
+
+        const [minValue, minIndex] = findMin(arr);
+
+        console.log('phan tu nho nhat la', minValue);
+        console.log('vi tri cua phan tu nho nhat la', minIndex);  </script>
+</body>
+
+</html>
