@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var input = prompt("Hay nhap 1 chuoi");
+        var inputArr = input.split(" ");
+        var newArr = [];
+        for (let index = 0; index < inputArr.length; index++){
+            let element = inputArr[index].split("").reverse().join("");
+        newArr.push(element); }
+        console.log(newArr.join(" "))
+    </script>
+</body>
+
+</html>
