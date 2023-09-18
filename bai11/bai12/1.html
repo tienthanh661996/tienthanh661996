@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = prompt("Mời nhập ký tự");
+        let b = a.split("");
+        b = b.sort((a, b) => a - b);
+
+        while (b[0] == b[1]) {
+            b.shift();
+        }
+        let c = "";
+        for (let i = 0; i < b.length; i++) {
+            if (!c.includes(b[i])) {
+                c += b[i];
+            }
+        }
+        console.log(c);
+
+    </script>
+</body>
+
+</html>
