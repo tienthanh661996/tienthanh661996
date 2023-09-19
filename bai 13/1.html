@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ HTML Collection và NodeList là hai kiểu dữ liệu tương tự nhau trong JavaScript, đại diện cho một tập hợp các phần tử HTML. Tuy nhiên, giữa chúng cũng có một số điểm khác biệt.
+
+Giống nhau:
+Cả HTML Collection và NodeList đều là các tập hợp các phần tử HTML.
+Cả hai kiểu dữ liệu đều có các phương thức tương tự nhau, chẳng hạn như length, forEach, map, filter, v.v.
+Cả hai kiểu dữ liệu đều có thể được sử dụng để truy cập các phần tử HTML trong DOM.
+Khác nhau:
+HTML Collection là một kiểu dữ liệu động, có nghĩa là nó có thể thay đổi kích thước khi các phần tử HTML được thêm hoặc xóa khỏi DOM. NodeList là một kiểu dữ liệu tĩnh, có nghĩa là kích thước của nó sẽ không thay đổi khi các phần tử HTML được thêm hoặc xóa khỏi DOM.
+HTML Collection được tạo bằng cách sử dụng các phương thức như document.querySelectorAll() và document.getElementsByTagName(). NodeList được tạo bằng cách sử dụng các phương thức như document.querySelectorAll() và document.getElementsByTagName().
+HTML Collection có thể được chuyển đổi sang NodeList bằng cách sử dụng phương thức NodeList.from(). NodeList không thể được chuyển đổi sang HTML Collection.
+</body>
+</html>
