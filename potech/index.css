@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+   CSS những cái chung
+.pr
+
+ */
+ .phanthan{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(228, 10, 10);
+    width: 100%;
+    height: 800px;
+ }
+ .product-item{
+    width: 400px;
+    height: 100px;
+    background-color: red;
+ }
+  
